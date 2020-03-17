@@ -1,2 +1,0 @@
-# Calligrapher
-calligrapher android app
