@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/poetry_avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="#FDD5C4"
+        android:layout_centerInParent="true"/>
+    <circleimageview.CircleImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/applogo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/app_name"
+        android:textColor="#000"
+        android:textSize="23sp"
+        android:typeface="monospace"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_edittext">
+
+        <ImageView
+            android:id="@+id/l_UserIconPhone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/login_head" />
+
+        <View
+            android:id="@+id/viewName"
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/l_UserIconPhone"
+            android:background="#cccccc"/>
+
+        <EditText
+            android:id="@+id/li_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/viewName"
+            android:background="@null"
+            android:ems="19"
+            android:hint="手机号"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/li_phone_number_clear"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/clear_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_userName"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/rectangle_edittext">
+
+        <ImageView
+            android:id="@+id/iv_userIconPwd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/close_eye" />
+
+        <View
+            android:id="@+id/viewPwd"
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_userIconPwd"
+            android:background="#cccccc"/>
+
+        <EditText
+            android:id="@+id/li_identity"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/viewPwd"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:ems="19"
+            android:hint="验证码"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/r_send_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_corner_bg"
+            android:text="发送验证码" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@+id/rl_userPassword"
+        android:id="@+id/choose_fun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/li_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_gravity="left"
+            android:text="注册"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            android:text="密码登录"
+            android:textSize="18sp" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/li_login"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_fun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/store_char_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+        <ImageView
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:id="@+id/store_back_char_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/rg_store_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue">
+
+        <RadioButton
+            android:id="@+id/rb_store_jian"
+            style="@style/tab_tracing_item"
+            android:text="简" />
+
+        <RadioButton
+            android:id="@+id/rb_store_fan"
+            style="@style/tab_tracing_item"
+            android:text="繁" />
+
+        <RadioButton
+            android:id="@+id/rb_store_xing"
+            style="@style/tab_tracing_item"
+            android:text="行"/>
+
+        <RadioButton
+            android:id="@+id/rb_store_cao"
+            style="@style/tab_tracing_item"
+            android:text="草" />
+
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg_tracing_bar"/>
+</LinearLayout>

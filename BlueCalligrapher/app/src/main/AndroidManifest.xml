@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hasee.bluecalligrapher">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--sms短信发送权限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />      <!-- 语音识别-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />    <!-- 语音识别-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />    <!-- 语音识别-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />         <!-- 语音识别-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 语音识别-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera2.full"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:name="com.mob.MobApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:icon, android:label,android:theme">
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".StartActivity"
+            android:theme="@style/TranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".write_field_character.FieldCharacterShapeActivity"/>
+        <activity android:name=".dynamic.WriteDynamicActivity"/>
+        <activity android:name=".lesson.LessonChapter1Activity"/>
+        <activity android:name=".lesson.LessonChapter2Activity"/>
+        <activity android:name=".lesson.LessonChapter3Activity"/>
+        <activity android:name=".lesson.LessonVideoActivity"/>
+        <activity android:name=".letter.UserLetterInfoActivity"/>
+        <activity android:name=".letter.SendLetterActivity"/>
+        <activity android:name=".main.CommentActivity"/>
+        <activity android:name=".poetry.SearchPoetryActivity"/>
+        <activity android:name=".poetry.PoetryActivity"/>
+        <activity android:name=".poetry.PoetryCommentActivity"/>
+        <activity android:name=".tracing.CharCompareActivity"/>
+        <activity android:name=".tracing.TracingLibraryActivity"/>
+        <activity android:name=".tracing.PhotoCompareActivity"/>
+        <activity android:name=".userinfo.UserselfInfoActivity"/>
+        <activity android:name=".userinfo.UserInfoActivity"/>
+        <activity android:name=".register.ModifyPasswordActivity"/>
+        <activity android:name=".register.ForgetPasswordActivity"/>
+        <activity android:name=".register.LoginActivity"/>
+        <activity android:name=".register.RegisterActivity"/>
+        <activity android:name=".register.RegisterPasswordActivity"/>
+        <activity android:name=".setting.TodayActionActivity"/>
+        <activity android:name=".setting.UserStoreActivity"/>
+        <activity android:name=".setting.UserFollowActivity"/>
+        <activity android:name=".setting.UserMessageActivity"/>
+        <activity android:name=".setting.UserCleanCacheActivity"/>
+        <activity android:name=".setting.UserStoreCharActivity"/>
+        <activity android:name=".setting.SettingAboutActivity"/>
+        <activity android:name=".setting.UserDynamicActivity"/>
+
+        <meta-data android:name="Mob-AppKey" android:value="27d89fb6eacde"/>
+        <meta-data android:name="Mob-AppSecret" android:value="b4d86147ed34ba2cd57ff374f25b2d40"/>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

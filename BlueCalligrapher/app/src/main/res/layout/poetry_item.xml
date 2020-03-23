@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/poetry_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/poetry_item_pic"/>
+    <ImageView
+        android:id="@+id/poetry_item_pic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:alpha=".95"/>
+
+</RelativeLayout>

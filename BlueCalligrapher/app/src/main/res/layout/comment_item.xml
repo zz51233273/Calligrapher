@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/comment_item_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            app:border_width="1dp"
+            app:border_color="#ccc"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="55dp">
+            <TextView
+                android:id="@+id/comment_item_writer"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/main_item_date"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="35dp"
+            android:gravity="bottom"
+            android:textSize="16sp"
+            android:text=""
+            android:textColor="#8a8a8a"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/thumbs_up_grey"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/comment_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>

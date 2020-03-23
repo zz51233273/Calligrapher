@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:text="缓存管理"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--加载动画-->
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/setting_avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="#FDD5C4"
+        android:layout_centerInParent="true" />
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_below="@+id/toolbar">
+        <LinearLayout
+            android:id="@+id/personal_clean"
+            style="@style/single_layout">
+            <TextView
+                android:id="@+id/clean_text"
+                style="@style/usertext"
+                android:text="清理缓存" />
+            <TextView
+                android:id="@+id/cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/dark_grey"
+                android:text="0KB"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

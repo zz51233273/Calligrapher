@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fg_tracing_styles_layout"
+    android:background="@drawable/app_background">
+    <ImageView
+        android:id="@+id/photo_char"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/fg_tracing_write"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/handwriting"/>
+</RelativeLayout>

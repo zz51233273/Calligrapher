@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#464e6c</color>
+    <color name="colorPrimaryDark">#464e6c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_red">#EE2C2C</color>
+    <color name="red">#EE2C2C</color>
+    <color name="tab_orange">#FDCF94</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#FDD5C4</color>
+    <color name="tab_green">#7CCD7C</color>
+    <color name="black">#000000</color>
+    <color name="tab_tracing_green">#218868</color>
+    <color name="grey">#F0F0F0</color>
+    <color name="middle_grey">#CCCCCC</color>
+    <color name="dark_grey">#848484</color>
+    <color name="deep_dark_grey">#515151</color>
+    <!-- 描边颜色 -->
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="blue">#419DE4</color>
+    <color name="bilibili_red">#FB9099</color>
+    <color name="clr_f5f4f3">#f5f4f3</color>
+    <color name="clr_ff0000">#ff0000</color>
+    <color name="solid_yellow">#EEC900</color>
+    <color name="default_grey">#8A000000</color>
+    <color name="dkgray">#80808FF0</color>
+    <color name="dark_blue">#424A66</color>
+</resources>

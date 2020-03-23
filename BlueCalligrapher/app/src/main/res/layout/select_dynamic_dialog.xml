@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:text="更多"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F2F2F2"
+        />
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:text="举报"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F2F2F2"
+        />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+</LinearLayout>

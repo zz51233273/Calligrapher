@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+        <ImageView
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"/>
+    </android.support.v7.widget.Toolbar>
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout">
+        <FrameLayout
+            style="@style/single_layout">
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="left"
+                android:text="软件名" />
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="錾摹"/>
+        </FrameLayout>
+    </LinearLayout>
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout">
+        <FrameLayout
+            style="@style/single_layout">
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="left"
+                android:text="字帖来源" />
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="马永先硬笔书法工作室"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout">
+        <FrameLayout
+            style="@style/single_layout">
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="left"
+                android:text="制作组" />
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="河北大学小猪佩奇队"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout">
+        <FrameLayout
+            style="@style/single_layout">
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="left"
+                android:text="联系方式" />
+        </FrameLayout>
+        <FrameLayout
+            style="@style/single_layout">
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="left"
+                android:text="邮箱" />
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="245874567@qq.com"/>
+        </FrameLayout>
+        <FrameLayout
+            style="@style/single_layout">
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="1033527843@qq.com"/>
+        </FrameLayout>
+        <FrameLayout
+            style="@style/single_layout">
+            <TextView style="@style/usertext_data"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="1418951181@qq.com"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

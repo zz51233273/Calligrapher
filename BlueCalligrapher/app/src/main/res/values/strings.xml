@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">錾摹</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="talk_handwriting">一起来聊聊书法吧</string>
+    <string name="cancel">取消</string>
+    <string name="send">发送</string>
+    <string name="quit">退出</string>
+    <string name="clear">清除</string>
+    <string name="compare">比较</string>
+    <string name="not_login">您还未登录，请先登录</string>
+    <string name="unchecked_char">存在敏感字词，不能发送</string>
+    <string name="follow_info">关注 0 | 粉丝 0</string>
+    <string name="user_info">个人信息</string>
+    <string name="user_info_age">年龄：</string>
+    <string name="user_info_sex">性别：</string>
+    <string name="user_info_secret">保密</string>
+    <string name="send_letter">发送私信</string>
+    <string name="color_picker">颜色选择</string>
+    <string name="ok">确定</string>
+    <string name="openString">打开</string>
+    <string name="closeString">关闭</string>
+
+    <!--lesson篇-->
+    <string name="chapter1_1">笔碰到纸，与纸发生一刹那的摩擦，由此保证斜点的头部是尖的。\n注意：不是当笔碰到纸之后再去写，笔与纸的接触时间是一刹那的</string>
+    <string name="chapter1_2">逆锋起笔，撇的方向的点起笔应该是捺的方向。从斜点的方向点下去，再通过手腕从撇的方向抖出来</string>
+    <string name="chapter1_3">与撇点正好相反，从斜点的方向点下去，点下去后不动，再通过手腕，往上一挑</string>
+    <string name="chapter2_1">点分为斜点，撇点和挑点。点在汉字中有四个位置，分别是上，中，下，底。这几种组合称为点的黄金组合</string>
+    <string name="chapter2_2_1">关</string>
+    <string name="chapter2_2">两点在字的上部用的是斜点和撇点</string>
+    <string name="chapter2_3_1">亚</string>
+    <string name="chapter2_3">两点在字的中间用的是挑点和撇点</string>
+    <string name="chapter2_4_1">京</string>
+    <string name="chapter2_4">两点在字的下部用的是相反方向的两个斜点</string>
+    <string name="chapter2_5_1">其</string>
+    <string name="chapter2_5">两点在字的底部用的是撇点和斜点</string>
+    <string name="chapter3_1">三点组合中的三点分别是斜点，斜点，撇点。书写时三点不能相碰，三点大小需要相同</string>
+    <string name="chapter3_2">学</string>
+    <string name="chapter3_3">应</string>
+    <string name="chapter3_4">在党字头中，先是一小竖，左右分别写斜点和撇点</string>
+    <string name="chapter3_4_1">尚</string>
+
+    <string name="main_1">在我国的硬笔书坛，也有一支\"马家军\"，他们的教头是江苏太仓的马永先。马俊仁的名头曾经叱咤国际体坛，但在硬笔书坛，马永先与他的马家军弟子，同样以骄人的成绩使得书坛谁人不识君。</string>
+    <string name="main_2">1989年，马永先获得全国首届“黄河杯”硬笔书法大赛一等奖。\n1990年获得西安国际硬笔书法大赛一等奖。\n1991年获首届全国规范汉字楷书书法大赛中青年组硬笔书法一等奖。\n1993年获第二届海外中国书法篆刻大赛成年组硬笔书法唯一的金奖。</string>
+    <string name="main_3">马永先在各种大赛中获得的等级奖有七八十项之多。他的作品被收入《当代书法作品选》 《钢笔圆珠笔正楷字帖》等多种选集，并被选送到日本、比利时、新加坡、香港等海内外国家与地区展出。</string>
+    <string name="main_4">他指导的弟子，已有近四百人次获奖。例如1997年中央电视台举办了“迎香港回归祖国青少年书画大展”，马永先选送的十一个弟子的作品全部获奖。不但夺得了唯一的一名金奖，还夺得了五名银奖中的四名，十四名铜奖中六名。难怪中央电视台的副台长洪民生感慨万千地说：“这次大赛好象是专为你们太仓举办的。”</string>
+    <string name="report0">恶意攻击谩骂</string>
+    <string name="report1">营销广告</string>
+    <string name="report2">淫秽色情</string>
+    <string name="report3">政治反动</string>
+    <string name="load_error">加载失败</string>
+    <string name="loading">正在加载</string>
+    <string name="load_finish">已加载到底</string>
+    <string name="not_write">未填写</string>
+</resources>

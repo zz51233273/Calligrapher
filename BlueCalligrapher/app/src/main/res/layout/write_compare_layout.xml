@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back" />
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:text="临摹比对"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="45dp"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/imgs"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/img0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imgs"
+        android:id="@+id/compare_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/deep_dark_grey"
+        android:text="相似度"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compare_title"
+        android:background="@drawable/edit_circle_corner2"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/compare_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/compare_title"
+            android:gravity="center"
+            android:text="99.999%"
+            android:textColor="@color/deep_dark_grey"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

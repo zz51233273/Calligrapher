@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/poetry_avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="#FDD5C4"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:id="@+id/flayout_search"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+        <EditText
+            android:id="@+id/char_search_text"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/edit_bg"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:hint="请输入想要查询的汉字"/>
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/rg_tracing_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue"
+        android:layout_below="@id/flayout_search">
+
+        <RadioButton
+            android:id="@+id/rb_jian"
+            style="@style/tab_tracing_item"
+            android:text="简" />
+
+        <RadioButton
+            android:id="@+id/rb_fan"
+            style="@style/tab_tracing_item"
+            android:text="繁" />
+
+        <RadioButton
+            android:id="@+id/rb_xing"
+            style="@style/tab_tracing_item"
+            android:text="行"/>
+
+        <RadioButton
+            android:id="@+id/rb_cao"
+            style="@style/tab_tracing_item"
+            android:text="草" />
+
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg_tracing_bar"
+        android:layout_marginBottom="40dp"/>
+
+    <com.example.hasee.bluecalligrapher.utils.MyHorizontalListView
+        android:id="@+id/char_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/speech_animation"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/animation_speech"
+        android:visibility="gone" />
+</RelativeLayout>

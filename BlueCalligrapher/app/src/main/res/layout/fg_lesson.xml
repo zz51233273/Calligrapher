@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_below="@+id/personal_photo">
+        <LinearLayout
+            android:id="@+id/lesson_chapter1"
+            style="@style/single_layout">
+            <TextView
+                android:id="@+id/lesson_chapter1_text"
+                style="@style/usertext" android:text="第一节(斜点，撇点，挑点)" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout
+            android:id="@+id/lesson_chapter2"
+            style="@style/single_layout">
+            <TextView
+                android:id="@+id/lesson_chapter2_text"
+                style="@style/usertext"
+                android:text="第二节(点的黄金组合)" />
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout"
+            android:id="@+id/lesson_chapter3">
+            <TextView
+                android:id="@+id/lesson_chapter3_text"
+                style="@style/usertext" android:text="第三节(三点组合)"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout">
+        <LinearLayout
+            android:id="@+id/lesson_chapter4"
+            style="@style/single_layout">
+            <TextView
+                android:id="@+id/lesson_chapter4_text"
+                style="@style/usertext" android:text="第四节(横)"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout">
+        <LinearLayout
+            android:id="@+id/lesson_chapter5"
+            style="@style/single_layout">
+            <TextView
+                android:id="@+id/lesson_chapter5_text"
+                style="@style/usertext" android:text="第五节(竖)"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

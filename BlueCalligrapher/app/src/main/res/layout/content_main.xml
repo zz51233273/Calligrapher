@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hasee.bluecalligrapher.main.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_background">
+
+        <RadioButton
+            android:layout_marginTop="3dp"
+            android:id="@+id/rb_lesson"
+            style="@style/tab_menu_item"
+            android:text="课堂" />
+
+        <RadioButton
+            android:layout_marginTop="3dp"
+            android:id="@+id/rb_tracing"
+            style="@style/tab_menu_item"
+            android:text="临摹" />
+
+        <RadioButton
+            android:layout_marginTop="3dp"
+            android:id="@+id/rb_main"
+            style="@style/tab_menu_item"
+            android:text="主页"/>
+
+        <RadioButton
+            android:layout_marginTop="3dp"
+            android:id="@+id/rb_poetry"
+            style="@style/tab_menu_item"
+            android:text="赏析" />
+
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_tab_bar"
+        android:layout_below="@id/toolbar"/>
+
+</RelativeLayout>

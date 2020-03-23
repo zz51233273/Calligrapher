@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.hasee.bluecalligrapher.utils.SoftInputRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="赏析评论"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="28dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--所有评论-->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/comment_send"
+            android:background="@drawable/edit_circle_corner"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="5dp">
+            <EditText
+                android:id="@+id/comment_context"
+                android:hint="输入评论内容"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:inputType="textMultiLine"
+                android:background="@null"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/comment_send"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:text="发送"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:background="@color/bilibili_red"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.example.hasee.bluecalligrapher.utils.SoftInputRelativeLayout>
